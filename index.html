@@ -7,6 +7,8 @@
     <title>GameOn - Gaming Tournaments</title>
     <link rel="stylesheet" href="style.css">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         
 
@@ -43,20 +45,63 @@
 
 <body class="bg-gray-800 text-white">
     <!-- Navbar -->
-    <nav class="fixed w-full bg-white bg-opacity-10 shadow-lg z-50">
-        <div class="container mx-auto px-6 py-1 flex justify-between items-center">
+    <!-- <nav class="fixed  w-full bg-white bg-opacity-10 shadow-lg z-50">
+        <div class="container mx-auto px-6 py-1 flex justify-between items-center"> -->
             <!-- <h1 class="text-4xl font-bold text-cyan-600 glow">GameOn</h1> -->
-             <img src="images/gravityTransparent.png" alt="" class="w-14 h-14 glow ">
+             <!-- <img src="images/gravityTransparent.png" alt="" class="w-14 h-14 glow ">
             <ul class="flex space-x-8">
                 <li><a href="#home" class="hover:text-cyan-600">Home</a></li>
+                <li><a href="#about" class="hover:text-cyan-600">About</a></li>
+                <li><a href="#tournaments" class="hover:text-cyan-600">Tournaments</a></li> -->
+                <!-- <li><a href="#gallery" class="hover:text-cyan-600">Gallery</a></li> -->
+                <!-- <li><a href="#contact" class="hover:text-cyan-600">Contact</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+
+    <nav id="navbar" class="w-full fixed px-8 sm:px-[12%] flex items-center justify-between z-50 shadow-md bg-white bg-opacity-10 ">
+
+ 
+
+        <a href="https://techtonicsgames.vercel.app"><img loading="lazy" src="images/gravityTransparent.png" alt="Logo"
+                class="w-14 h-14 rounded-lg cursor-pointer mr-14 py-1"></a>
+
+        <ul class="hidden md:flex items-center gap-12 lg:gap-12 text-white">
+            <li><a href="#home" class="hover:text-cyan-600">Home</a></li>
                 <li><a href="#about" class="hover:text-cyan-600">About</a></li>
                 <li><a href="#tournaments" class="hover:text-cyan-600">Tournaments</a></li>
                 <!-- <li><a href="#gallery" class="hover:text-cyan-600">Gallery</a></li> -->
                 <li><a href="#contact" class="hover:text-cyan-600">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        </ul>
 
+
+        <button class="block md:hidden ml-3 openMenu" id="menuIcon">
+            <i id="menu-icon" class="fa-solid fa-bars text-white text-xl"></i>
+            <!-- <img loading="lazy" src="images/menu-black.png" alt="Menu-Icon" class="w-6"> -->
+        </button>
+
+
+
+
+        <!-- mobile navbar -->
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-white bg-opacity-10 transition duration-500 gap-4">
+
+            <div class="absolute right-6 top-6 closeMenu ">
+                <i id="close-icon" class=" fa-solid fa-xmark text-xl"></i>
+                <!-- <img loading="lazy" src="images/close-black.png" alt="Close-Icon" class="w-5 cursor-pointer"> -->
+            </div>
+
+            <li><a href="#home" class="hover:text-cyan-600">Home</a></li>
+                <li><a href="#about" class="hover:text-cyan-600">About</a></li>
+                <li><a href="#tournaments" class="hover:text-cyan-600">Tournaments</a></li>
+                <!-- <li><a href="#gallery" class="hover:text-cyan-600">Gallery</a></li> -->
+                <li><a href="#contact" class="hover:text-cyan-600">Contact</a></li>
+        </ul>
+
+
+    </nav>
     <!-- Hero Section with Video Background -->
     <section id="home" class="relative h-screen flex items-center justify-center text-center">
         <video id="hero-video" autoplay muted loop>
@@ -146,6 +191,9 @@
         <p>&copy; 2024 GameOn. All Rights Reserved.</p>
         <p>Follow us on <a href="#" class="hover:underline text-cyan-400">Instagram</a> | <a href="#" class="hover:underline text-cyan-400">Twitter</a></p>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
