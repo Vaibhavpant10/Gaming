@@ -86,7 +86,7 @@
 
         <!-- mobile navbar -->
         <ul id="sideMenu"
-            class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-white bg-opacity-10 transition duration-500 gap-4">
+            class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-gray-800 bg-opacity-70 transition duration-500 gap-12">
 
             <div class="absolute right-6 top-6 closeMenu ">
                 <i id="close-icon" class=" fa-solid fa-xmark text-xl"></i>
@@ -107,7 +107,7 @@
         <video id="hero-video" autoplay muted loop>
             <source src="https://cdn.pixabay.com/video/2017/12/05/13232-246463976_large.mp4" type="video/mp4">
         </video>
-        <div class="relative z-10">
+        <div class="relative z-10 mx-5">
             <h2 class="text-5xl md:text-7xl p-7 rounded-xl font-extrabold text-white glow ">Welcome to the Arena</h2>
             <p class="mt-4 text-lg md:text-2xl text-gray-300">Get ready for epic battles and tournaments.</p>
             <a href="#tournaments" class="mt-6 inline-block bg-cyan-600 text-white px-10 py-4 rounded-full hover:bg-cyan-700 transition-all">Join Now</a>
@@ -115,10 +115,10 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-transparent text-white">
+    <section id="about" class="py-16 bg-transparent text-white mx-5">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold mb-8 text-cyan-300">About Us</h2>
-            <p class="text-lg md:text-xl leading-relaxed text-white">At GameOn, we bring together gamers from all over the world to compete in exciting tournaments. Whether you're a professional or just love gaming, our platform provides the ultimate battleground.</p>
+            <p class="text-lg md:text-xl leading-relaxed text-white text-center">At GameOn, we bring together gamers from all over the world to compete in exciting tournaments. Whether you're a professional or just love gaming, our platform provides the ultimate battleground.</p>
             <div class="mt-10">
                 <img src="images/gameupdated.webp" alt="Gaming Image" class="rounded-lg mx-auto shadow-lg w-3/4 md:w-1/2">
             </div>
@@ -129,9 +129,9 @@
     <section id="tournaments" class="py-16 bg-transparent">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold mb-8 text-cyan-300">Upcoming Tournaments</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mx-5">
                 <!-- Tournament Card 1 -->
-                <div class="bg-white bg-opacity-10 p-6 rounded-sm shadow-xl transform hover:scale-105 transition-all">
+                <div class="bg-white bg-opacity-10 p-6 rounded-sm shadow-xl transform hover:scale-105 transition-all ">
                     <img src="images/freefire.png" alt="Free Fire" class="w-full h-48 object-cover rounded-t-lg mb-4">
                     <h3 class="text-2xl font-bold mb-2">Free Fire Championship</h3>
                     <p class="text-white mb-4">Date: Coming Soon</p>
@@ -168,18 +168,23 @@
     </section> -->
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-transparent">
+    <section id="contact" class="py-16 bg-transparent mx-5">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8 text-cyan-600">Contact Us</h2>
-            <form class="w-full md:w-1/2 mx-auto bg-white/10 p-6 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold mb-3 text-cyan-600">Contact Us</h2>
+            <h2 class="text-xl font-bold mb-8 text-cyan-600">for any Query</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" class="w-full md:w-1/2 mx-auto bg-white/10 p-6 rounded-lg shadow-lg">
+               
+                <input type="hidden" name="access_key" value="79d14dde-5d05-4a13-93cf-764059d32561">
+
+
                 <div class="mb-4">
-                    <input type="text" placeholder="Your Name" class="w-full p-3 bg-gray-200/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
+                    <input name="Name" type="text" placeholder="Your Name" class="w-full p-3 bg-gray-200/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
                 </div>
                 <div class="mb-4">
-                    <input type="email" placeholder="Your Email" class="w-full p-3 bg-gray-200/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
+                    <input name="Email" type="email" placeholder="Your Email" class="w-full p-3 bg-gray-200/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
                 </div>
                 <div class="mb-4">
-                    <textarea placeholder="Your Message" class="w-full p-3 bg-gray-200/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"></textarea>
+                    <textarea name="Message" placeholder="Your Message" class="w-full p-3 bg-gray-200/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"></textarea>
                 </div>
                 <button type="submit" class="bg-cyan-600 px-6 py-3 text-white rounded-full hover:bg-cyan-700 transition-all">Send Message</button>
             </form>
